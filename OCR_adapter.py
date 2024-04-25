@@ -1,8 +1,6 @@
 # Import our general libraries
-import sys
 import time
 
-# Import the CodeProject.AI SDK. This will add to the PATH var for future imports
 # Import CodeProject.AI SDK
 from codeproject_ai_sdk import RequestData, ModuleRunner, JSON
 
