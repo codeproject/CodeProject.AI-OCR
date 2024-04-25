@@ -1,0 +1,10 @@
+{
+  "Modules": {
+
+    "OCR": {
+      "GpuOptions" : {
+        "InstallGPU": false   // PaddlePaddle-GPU isn't supported on macOS
+      }
+    }
+  }
+}
