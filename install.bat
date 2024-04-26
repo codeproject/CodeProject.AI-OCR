@@ -4,7 +4,7 @@
 ::
 :: This script is called from the OCR directory using: 
 ::
-::    ..\..\setup.bat
+::    ..\..\CodeProject.AI-Server\src\setup.bat
 ::
 :: The setup.bat file will find this install.bat file and execute it.
 ::
