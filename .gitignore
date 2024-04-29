@@ -16,3 +16,5 @@ paddleocr
 
 # Python install / Virtual environment
 bin/
+/.vs/OCR/FileContentIndex
+/.vs/OCR/v17
