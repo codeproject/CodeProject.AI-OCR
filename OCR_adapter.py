@@ -1,23 +1,12 @@
 # Import our general libraries
 import time
 
-# this prevents a error in the _distutils_hack package
+# SetupTools replaces DistUtils, but if a package imports distutils before 
+# setuptools then setuptools will chuck a wobbly. This is a prophylactic.
 import setuptools
 
 # Import CodeProject.AI SDK
-# Manually installing CodeProject.AI SDK requirements until we get the issue with
-# our SDK PyPi sorted out
-#
-# Import CodeProject.AI SDK
-# from codeproject_ai_sdk import RequestData, ModuleRunner, JSON
-#
-import os
-import sys
-if os.path.exists("../../CodeProject.AI-Server/src/SDK/Python"):
-    sys.path.append("../../CodeProject.AI-Server/src/SDK/Python")
-from request_data import RequestData
-from module_runner import ModuleRunner
-from common import JSON
+from codeproject_ai_sdk import RequestData, ModuleRunner, JSON
 
 from options import Options
 

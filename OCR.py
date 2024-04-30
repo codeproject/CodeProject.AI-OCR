@@ -3,20 +3,8 @@ import time
 import traceback
 from PIL import Image
 
-# Manually installing CodeProject.AI SDK requirements until we get the issue with
-# our SDK PyPi sorted out
-#
 # Import CodeProject.AI SDK
-# from codeproject_ai_sdk import LogVerbosity, ModuleRunner, JSON
-#
-import os
-import sys
-if os.path.exists("../../CodeProject.AI-Server/src/SDK/Python"):
-    sys.path.append("../../CodeProject.AI-Server/src/SDK/Python")
-from module_runner import ModuleRunner
-from module_logging import LogVerbosity
-from common import JSON
-
+from codeproject_ai_sdk import LogVerbosity, ModuleRunner, JSON
 
 from options import Options
 from paddleocr import PaddleOCR
