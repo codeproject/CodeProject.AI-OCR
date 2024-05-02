@@ -1,10 +1,6 @@
 # Import our general libraries
 import time
 
-# SetupTools replaces DistUtils, but if a package imports distutils before 
-# setuptools then setuptools will chuck a wobbly. This is a prophylactic.
-import setuptools
-
 # Import CodeProject.AI SDK
 from codeproject_ai_sdk import RequestData, ModuleRunner, JSON
 
