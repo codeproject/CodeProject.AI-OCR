@@ -2,9 +2,8 @@
 ::
 ::                          OCR
 ::
-:: This script is called from the OCR directory using: 
-::
-::    ..\..\CodeProject.AI-Server\src\setup.bat
+:: This script is only called from ..\..\CodeProject.AI-Server\src\setup.bat in
+:: Dev setup, or ..\..\src\setup.bat in production
 ::
 :: The setup.bat file will find this install.bat file and execute it.
 ::
