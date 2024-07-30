@@ -35,5 +35,8 @@ if %errorlevel% equ 0 (
     call "!utilsScript!" WriteLine "** WARNING: PaddlePaddle may fail on the Intel 920 CPU"
 )
 
+REM Empty command to clear errorlevel
+cd > nul
+
 REM TODO: Check paddleocr created and has files
 REM set moduleInstallErrors=...
