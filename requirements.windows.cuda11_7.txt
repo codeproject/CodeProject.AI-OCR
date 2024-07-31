@@ -2,8 +2,6 @@
 
 numpy<2.0                       # Installing NumPy, a package for scientific computing
 
-Pillow>=10.0.0                  # Installing Pillow, a Python Image Library
-
 # PaddlePaddle from PyPi is for CUDA 10.2 only. Need to use paddlepaddle.org for other CUDA versions
 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
 paddlepaddle-gpu==2.6.0.post117 # Installing PaddlePaddle, Parallel Distributed Deep Learning
