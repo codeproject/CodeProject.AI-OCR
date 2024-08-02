@@ -3,7 +3,7 @@
 
     "OCR": {
       "Name": "Optical Character Recognition",
-      "Version": "2.1.1",
+      "Version": "2.2.0",
 
       "PublishingInfo" : {
         "Description": "Provides OCR support using the PaddleOCR toolkit", 
@@ -58,10 +58,11 @@
           { "ModuleVersion": "1.7.2", "ServerVersionRange": [ "2.5.0-RC6", ""   ], "ReleaseDate": "2024-01-16", "ReleaseNotes": "Updated modulesettings schema" },
           { "ModuleVersion": "1.7.3", "ServerVersionRange": [ "2.5.0-RC6", ""   ], "ReleaseDate": "2024-01-18", "ReleaseNotes": "Updated explorer" },
           { "ModuleVersion": "1.8.0", "ServerVersionRange": [ "2.5.0-RC6", ""   ], "ReleaseDate": "2024-01-21", "ReleaseNotes": "Module performance statistics added" },
-          { "ModuleVersion": "1.8.1", "ServerVersionRange": [ "2.5.2",     ""   ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
-          { "ModuleVersion": "2.0.0", "ServerVersionRange": [ "2.5.2",     ""   ], "ReleaseDate": "2024-02-11", "ReleaseNotes": "Updated text recognition model to PP-OCRv4" },
-          { "ModuleVersion": "2.1.0", "ServerVersionRange": [ "2.6.5",     ""   ], "ReleaseDate": "2024-04-25", "ReleaseNotes": "Updated for CodeProject.AI Server 2.6.5" },
-          { "ModuleVersion": "2.1.1", "ServerVersionRange": [ "2.6.5",     ""   ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrected Numpy 2.0 issue" }
+          { "ModuleVersion": "1.8.1", "ServerVersionRange": [ "2.5.2", "2.6.0"  ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
+          { "ModuleVersion": "2.0.0", "ServerVersionRange": [ "2.5.2", "2.6.0"  ], "ReleaseDate": "2024-02-11", "ReleaseNotes": "Updated text recognition model to PP-OCRv4" },
+          { "ModuleVersion": "2.1.0", "ServerVersionRange": [ "2.6.5", "2.7.0"  ], "ReleaseDate": "2024-04-25", "ReleaseNotes": "Updated for CodeProject.AI Server 2.6.5" },
+          { "ModuleVersion": "2.1.1", "ServerVersionRange": [ "2.6.5", "2.7.0"  ], "ReleaseDate": "2024-06-21", "ReleaseNotes": "Corrected NumPy 2.0 issue" },
+          { "ModuleVersion": "2.2.0", "ServerVersionRange": [ "2.8.0", ""       ], "ReleaseDate": "2024-08-02", "ReleaseNotes": "Updated for server 2.8" }
         ]
       },
       
