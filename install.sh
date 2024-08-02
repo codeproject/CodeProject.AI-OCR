@@ -55,15 +55,15 @@ if [ "${edgeDevice}" = "Raspberry Pi" ] || [ "${edgeDevice}" = "Orange Pi" ] ||
     # clean up
     # rm "${downloadDirPath}/${os}/packages/${wheel_file}"
 
-    # module_install_errors=...
+    # moduleInstallErrors=...
 
 elif [ "${edgeDevice}" = "Jetson" ]; then
-    module_install_errors="Unable to install PaddleOCR on Jetson."
+    moduleInstallErrors="Unable to install PaddleOCR on Jetson."
 fi
 
 # libssl.so.1.1: cannot open shared object file: No such file or directory
 # https://github.com/PaddlePaddle/Paddle/issues/55597
-if [ "${module_install_errors}" = "" ] && [ "$os" = "linux" ] && [ "$architecture" == "x86_64" ]; then
+if [ "${moduleInstallErrors}" = "" ] && [ "$os" = "linux" ] && [ "$architecture" == "x86_64" ]; then
 
     if [ ! -f /usr/lib/x86_64-linux-gnu/libssl.so.1.1 ] || [ ! -e /usr/lib/libcrypto.so.1.1 ]; then
 
@@ -73,7 +73,7 @@ if [ "${module_install_errors}" = "" ] && [ "$os" = "linux" ] && [ "$architectur
 
         if [ "$isAdmin" = true ] || [ "$attemptSudoWithoutAdminRights" = true ]; then
 
-            module_install_errors=""
+            moduleInstallErrors=""
 
             if [ "$os_name" != "debian" ]; then
                 echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
@@ -116,12 +116,12 @@ if [ "$os" = "macos" ]; then
     fi
 fi
 
-if [ "${module_install_errors}" = "" ]; then
+if [ "${moduleInstallErrors}" = "" ]; then
 
     # Download the OCR models and store in /paddleocr
     getFromServer "models/" "ocr-en-pp_ocrv4-paddle.zip" "paddleocr" "Downloading OCR models..."
 
     # TODO: Check paddleocr created and has files, maybe run paddle check too
-    # module_install_errors=...
+    # moduleInstallErrors=...
 fi
 
