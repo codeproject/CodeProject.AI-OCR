@@ -44,16 +44,16 @@ if [ "${edgeDevice}" = "Raspberry Pi" ] || [ "${edgeDevice}" = "Orange Pi" ] ||
     else
         # download the wheel
         wheel_file="paddlepaddle-2.4.2-cp39-cp39-linux_aarch64.whl"
-        if [ ! -f "${downloadDirPath}/${os}/packages/${wheel_file}" ]; then
-            wget -P "${downloadDirPath}/${os}/packages/" https://github.com/Qengineering/Paddle-Raspberry-Pi/raw/main/${wheel_file}
+        if [ ! -f "${downloadDirPath}/${platform_dir}/packages/${wheel_file}" ]; then
+            wget -P "${downloadDirPath}/${platform_dir}/packages/" https://github.com/Qengineering/Paddle-Raspberry-Pi/raw/main/${wheel_file}
         fi
         
         # install Paddle
-        installPythonPackagesByName "${downloadDirPath}/${os}/packages/${wheel_file}" "PaddlePaddle"
+        installPythonPackagesByName "${downloadDirPath}/${platform_dir}/packages/${wheel_file}" "PaddlePaddle"
     fi
     
     # clean up
-    # rm "${downloadDirPath}/${os}/packages/${wheel_file}"
+    # rm "${downloadDirPath}/${platform_dir}/packages/${wheel_file}"
 
     # moduleInstallErrors=...
 
