@@ -23,7 +23,7 @@ fi
 if [ "${edgeDevice}" = "Raspberry Pi" ] || [ "${edgeDevice}" = "Orange Pi" ] || 
    [ "${edgeDevice}" = "Radxa ROCK" ]; then
 
-    oneStepPIP=true
+    oneStepPIP=false
 
     if [ "$oneStepPIP" = false ]; then
         installPythonPackagesByName "numpy==1.23.3 protobuf<=3.20"
