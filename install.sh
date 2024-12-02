@@ -23,7 +23,8 @@ fi
 if [ "${edgeDevice}" = "Raspberry Pi" ] || [ "${edgeDevice}" = "Orange Pi" ] || 
    [ "${edgeDevice}" = "Radxa ROCK" ]; then
 
-    installPythonPackagesByName "opencv-python>=4.2.0" "OpenCV, the Computer Vision library for Python"
+    # PaddleOCR 2.7.0.3 requires OpenCV 4.6.0.66
+    installPythonPackagesByName "opencv-python==4.6.0.66" "OpenCV, the Computer Vision library for Python"
 
     # a fresh start
     write "Updating apt-get..."
