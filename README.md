@@ -1,6 +1,6 @@
 # Optical Character Recognition (OCR) Module for CodeProject.AI Server
 
-This is an OCR module using the for [CodeProject.AI Server](https://www.codeproject.com/Articles/5322557/CodeProject-AI-Server-AI-the-easy-way). The actual module itself is downloadable via the CodeProject.AI Server's dashboard.
+This is an OCR module using the for [CodeProject.AI Server](https://github.com/codeproject/CodeProject.AI-Server). The actual module itself is downloadable via the CodeProject.AI Server's dashboard.
 
 ## To develop and debug this code
 
